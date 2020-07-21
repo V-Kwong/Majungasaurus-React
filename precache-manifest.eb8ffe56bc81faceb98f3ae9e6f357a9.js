@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de1645f9c31aeda334233beb567637ab",
+    "revision": "69b46b6deaab10b45b1eb0ecbea7e180",
     "url": "/Majungasaurus-React/index.html"
   },
   {
