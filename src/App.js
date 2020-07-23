@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Scrollbars } from 'react-custom-scrollbars';
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -16,6 +17,7 @@ import Contact from './screens/contact';
 
 import Logo from './images/black-dinosaur-logo-clip-art-png-clip-art.png';
 import { LogoButton } from './components/logoButton';
+
 
 export default class App extends Component {
 
@@ -42,8 +44,23 @@ export default class App extends Component {
           <img src={Logo} className={styles.logo} alt="" onClick={this.scrollToTop}/>
         </LogoButton>
 
+        {/* <Menu>
+          <span>
+            <MenuRoundedIcon/>
+          </span>
+        </Menu> */}
+
+        {/* <ul id="menu">
+          <li data-menuanchor="allosaurus" class="active"><a href="#allosaurus">Allosaurus</a></li>
+          <li data-menuanchor="brachiosaurus"><a href="#brachiosaurus">Brachiosaurus</a></li>
+          <li data-menuanchor="edmontosaurus"><a href="#edmontosaurus">Edmontosaurus</a></li>
+          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        </ul> */}
+
         <Page>
+          <div className="pageDividerTop"/>
           <About />
+          <div className="pageDividerBottom"/>
         </Page>
 
         <div className={styles.overlay}>
@@ -82,19 +99,25 @@ export default class App extends Component {
         </div>
 
         <Page>
+          <div className="pageDividerTop"/>
           <Product
             title='Brachiosaurus'
             text='Most Iconic and initially thought to be one of the Largest Dinosaurs.'
           />
+          <div className="pageDividerBottom"/>
         </Page>
         <Page>
+          <div className="pageDividerTop"/>
           <Product
             title='Edmontosaurus'
             text='Herbivore that could move on both Two Legs and Four. Flex.'
           />
+          <div className="pageDividerBottom"/>
         </Page>
         <Page>
+          <div className="pageDividerTop"/>
           <Contact />
+          <div className="pageDividerBottom"/>
         </Page>
       </Scrollbars>
     )
