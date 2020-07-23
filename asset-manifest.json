@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Majungasaurus-React/static/css/main.3194dfc3.chunk.css",
-    "main.js": "/Majungasaurus-React/static/js/main.a56a44a7.chunk.js",
-    "main.js.map": "/Majungasaurus-React/static/js/main.a56a44a7.chunk.js.map",
+    "main.css": "/Majungasaurus-React/static/css/main.1495beae.chunk.css",
+    "main.js": "/Majungasaurus-React/static/js/main.18a9fb7f.chunk.js",
+    "main.js.map": "/Majungasaurus-React/static/js/main.18a9fb7f.chunk.js.map",
     "runtime-main.js": "/Majungasaurus-React/static/js/runtime-main.39029b49.js",
     "runtime-main.js.map": "/Majungasaurus-React/static/js/runtime-main.39029b49.js.map",
-    "static/js/2.cb45a152.chunk.js": "/Majungasaurus-React/static/js/2.cb45a152.chunk.js",
-    "static/js/2.cb45a152.chunk.js.map": "/Majungasaurus-React/static/js/2.cb45a152.chunk.js.map",
+    "static/js/2.67754905.chunk.js": "/Majungasaurus-React/static/js/2.67754905.chunk.js",
+    "static/js/2.67754905.chunk.js.map": "/Majungasaurus-React/static/js/2.67754905.chunk.js.map",
     "index.html": "/Majungasaurus-React/index.html",
-    "precache-manifest.eb8ffe56bc81faceb98f3ae9e6f357a9.js": "/Majungasaurus-React/precache-manifest.eb8ffe56bc81faceb98f3ae9e6f357a9.js",
+    "precache-manifest.2fe4d946f438ffd4e9a3b22082f328f8.js": "/Majungasaurus-React/precache-manifest.2fe4d946f438ffd4e9a3b22082f328f8.js",
     "service-worker.js": "/Majungasaurus-React/service-worker.js",
-    "static/css/main.3194dfc3.chunk.css.map": "/Majungasaurus-React/static/css/main.3194dfc3.chunk.css.map",
-    "static/js/2.cb45a152.chunk.js.LICENSE.txt": "/Majungasaurus-React/static/js/2.cb45a152.chunk.js.LICENSE.txt",
+    "static/css/main.1495beae.chunk.css.map": "/Majungasaurus-React/static/css/main.1495beae.chunk.css.map",
+    "static/js/2.67754905.chunk.js.LICENSE.txt": "/Majungasaurus-React/static/js/2.67754905.chunk.js.LICENSE.txt",
     "static/media/typography.css": "/Majungasaurus-React/static/media/Oxygen-Regular.f9ff876f.ttf",
     "static/media/black-dinosaur-logo-clip-art-png-clip-art.png": "/Majungasaurus-React/static/media/black-dinosaur-logo-clip-art-png-clip-art.ff565b0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.39029b49.js",
-    "static/js/2.cb45a152.chunk.js",
-    "static/css/main.3194dfc3.chunk.css",
-    "static/js/main.a56a44a7.chunk.js"
+    "static/js/2.67754905.chunk.js",
+    "static/css/main.1495beae.chunk.css",
+    "static/js/main.18a9fb7f.chunk.js"
   ]
 }
