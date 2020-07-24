@@ -24,13 +24,13 @@
 .socialIconCircle {
   height: 36px;
   width: 36px;
-  margin: 0 5px;
+  margin: 0 2px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
-  background-color: #313131;
+  /* background-color: #313131; */
 
   transition: all .25s ease;
 }

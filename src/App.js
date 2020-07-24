@@ -28,19 +28,6 @@ export default class App extends Component {
       >
 
         <Main/>
-      
-        {/* <Menu>
-          <span>
-            <MenuRoundedIcon/>
-          </span>
-        </Menu> */}
-
-        {/* <ul id="menu">
-          <li data-menuanchor="allosaurus" class="active"><a href="#allosaurus">Allosaurus</a></li>
-          <li data-menuanchor="brachiosaurus"><a href="#brachiosaurus">Brachiosaurus</a></li>
-          <li data-menuanchor="edmontosaurus"><a href="#edmontosaurus">Edmontosaurus</a></li>
-          <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
-        </ul> */}
 
         <SticktyHeader scrollToTop={this.scrollToTop}/>
         <About/>
@@ -63,7 +50,7 @@ export default class App extends Component {
         <div className="pageDividerTop"/>
         <Contact/>
         <div className="pageDividerBottom"/>
-        
+
       </Scrollbars>
     )
   }
