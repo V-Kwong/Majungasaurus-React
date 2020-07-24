@@ -10,7 +10,7 @@ export default class SticktyFooter extends Component {
     return (
       <div className={["pageDividerBottom", styles.container].join(' ')}>
         <div className={styles.social}>
-          <a href="https://www.youtube.com/watch?v=_65kfGhZXZw" target="_blank">
+          <a href="https://www.youtube.com/watch?v=_65kfGhZXZw" target="_blank" rel="noopener noreferrer">
             <span className={styles.socialIconCircle}>
               <FacebookIcon
                 className={styles.socialIcon}
@@ -19,7 +19,7 @@ export default class SticktyFooter extends Component {
               />
             </span>
           </a>
-          <a href="https://www.youtube.com/watch?v=_65kfGhZXZw" target="_blank">
+          <a href="https://www.youtube.com/watch?v=_65kfGhZXZw" target="_blank" rel="noopener noreferrer">
             <span className={styles.socialIconCircle}>
               <TwitterIcon
                 className={styles.socialIcon}
@@ -28,7 +28,7 @@ export default class SticktyFooter extends Component {
               />
             </span>
           </a>
-          <a href="https://www.youtube.com/watch?v=_65kfGhZXZw" target="_blank">
+          <a href="https://www.youtube.com/watch?v=_65kfGhZXZw" target="_blank" rel="noopener noreferrer">
             <span className={styles.socialIconCircle}>
               <InstagramIcon
                 className={styles.socialIcon}
