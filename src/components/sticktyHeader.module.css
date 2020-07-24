@@ -26,25 +26,26 @@
 }
 
 .menuIconCircle {
-  height: 36px;
-  width: 36px;
-  margin: 0 5px;
+  height: 3rem;
+  width: 3rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 50%;
-  background-color: #313131;
+  /* background-color: #313131; */
 
+  cursor: pointer;
   transition: all .25s ease;
 }
 
 .menuIconCircle:hover {
-  background-color: #ffe001;
+  /* background-color: #ffe001; */
 }
 
 .menuIconCircle:hover .menuIcon {
-  fill: black;
+  fill: #ffe001;
 }
 
 @media only screen and (max-width: 600px) {
