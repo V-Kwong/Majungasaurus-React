@@ -11,6 +11,13 @@ export default class SticktyHeader extends Component {
     return (
       <div className={["pageDividerTop", styles.container].join(' ')}>
         <img src={Logo} className={styles.logo} alt="" onClick={scrollToTop}/>
+        <span className={styles.menuIconCircle}>
+          <MenuRoundedIcon
+            className={styles.menuIcon}
+            fontSize='large'
+            color='inherit'
+          />
+        </span>
       </div>
     )
   }
