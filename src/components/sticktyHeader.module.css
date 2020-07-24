@@ -1,0 +1,32 @@
+.container {
+  /* min-height: 64px; */
+  padding: 0 2.5vw;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+
+  /* background-color: rgba(32, 65, 25, 0.7); */
+}
+
+.logo {
+  width: 14vh;
+  /* margin: 3vh 2.5vw; */
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.logo:hover {
+  opacity: 0.75;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 10vh;
+    /* margin: 1.5vh 2.5vw; */
+  }
+}

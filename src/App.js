@@ -1,20 +1,14 @@
 import React, { Component } from "react"
 import { Scrollbars } from 'react-custom-scrollbars';
-import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 import styles from './App.module.css';
 
-import SticktyFooter from './components/stickyFooter';
-
-import Page from './components/page';
 import Main from './screens/main';
+import SticktyHeader from './components/stickyHeader';
 import About from './screens/about';
+import SticktyFooter from './components/stickyFooter';
 import Product from './screens/product';
 import Contact from './screens/contact';
-
-import Logo from './images/black-dinosaur-logo-clip-art-png-clip-art.png';
-import { LogoButton } from './components/logoButton';
-
 
 export default class App extends Component {
 
@@ -33,14 +27,8 @@ export default class App extends Component {
         style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}
       >
 
-        {/* <Page> */}
-          <Main />
-        {/* </Page> */}
+        <Main/>
       
-        <LogoButton>
-          <img src={Logo} className={styles.logo} alt="" onClick={this.scrollToTop}/>
-        </LogoButton>
-
         {/* <Menu>
           <span>
             <MenuRoundedIcon/>
@@ -54,33 +42,28 @@ export default class App extends Component {
           <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
         </ul> */}
 
-        {/* <Page> */}
-        <div className="pageDividerTop"/>
-        <About />
+        <SticktyHeader scrollToTop={this.scrollToTop}/>
+        <About/>
         <SticktyFooter/>
-        {/* </Page> */}
 
-        {/* <Page> */}
-          <div className="pageDividerTop"/>
-          <Product
-            title='Brachiosaurus'
-            text='Most Iconic and initially thought to be one of the Largest Dinosaurs.'
-          />
-          <div className="pageDividerBottom"/>
-        {/* </Page>
-        <Page> */}
-          <div className="pageDividerTop"/>
-          <Product
-            title='Edmontosaurus'
-            text='Herbivore that could move on both Two Legs and Four. Flex.'
-          />
-          <div className="pageDividerBottom"/>
-        {/* </Page>
-        <Page> */}
-          <div className="pageDividerTop"/>
-          <Contact />
-          <div className="pageDividerBottom"/>
-        {/* </Page> */}
+        <div className="pageDividerTop"/>
+        <Product
+          title='Brachiosaurus'
+          text='Most Iconic and initially thought to be one of the Largest Dinosaurs.'
+        />
+        <div className="pageDividerBottom"/>
+
+        <div className="pageDividerTop"/>
+        <Product
+          title='Edmontosaurus'
+          text='Herbivore that could move on both Two Legs and Four. Flex.'
+        />
+        <div className="pageDividerBottom"/>
+
+        <div className="pageDividerTop"/>
+        <Contact/>
+        <div className="pageDividerBottom"/>
+        
       </Scrollbars>
     )
   }
