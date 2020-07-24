@@ -84,7 +84,7 @@ h1 {
 
 .title {
   color: white;
-  padding-top: calc(2.5vh + (5 - 2.5) * ((100vh) / (1000 - 600)));
+  padding-top: calc(2.5vh + (8 - 2.5) * ((100vh) / (1000 - 600)));
 }
 
 p {
@@ -116,12 +116,12 @@ ul {
 @media only screen and (max-width: 600px) {
   .container {
     /* margin-top: 10vh; */
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
     /* margin-bottom: 10vh; */
     height: 80vh;
-    width: 80vw;
-    min-height: 512px;
+    width: 84vw;
+    /* min-height: 512px; */
     /* background-color: navy; */
     /* padding-top: 5px;
     padding-bottom: 5px; */
