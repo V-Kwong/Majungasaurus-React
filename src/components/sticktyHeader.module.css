@@ -41,11 +41,11 @@
 }
 
 .menuIconCircle:hover {
-  /* background-color: #ffe001; */
+  background-color: #313131;
 }
 
 .menuIconCircle:hover .menuIcon {
-  fill: #ffe001;
+  /* fill: #ffe001; */
 }
 
 @media only screen and (max-width: 600px) {
