@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Majungasaurus-React/precache-manifest.cf38a7bbd8e93c9eebe49818b378ef25.js"
+  "/Majungasaurus-React/precache-manifest.254fdb937f3d25d3e47a712f1e7fc6a0.js"
 );
 
 self.addEventListener('message', (event) => {
