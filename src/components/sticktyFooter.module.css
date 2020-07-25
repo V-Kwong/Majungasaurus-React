@@ -55,4 +55,8 @@
   .socialIconCircle {
     /* background-color: #414141; */
   }
+  .copyright {
+    margin-left: 1vw;
+    font-size: 10px;
+  }
 }
