@@ -20,10 +20,20 @@ export default class MobileNavPanel extends Component {
               />
             </span>
           </div>
-          <a href="#">Allosaurus</a>
-          <a href="#">Brachiosaurus</a>
-          <a href="#">Edmontosaurus</a>
-          <a href="#">Contact</a>
+          <div className={styles.linkContainer}>
+            <h1>
+              <a href="#" className={styles.link}>Allosaurus</a>
+            </h1>
+            <h1>
+              <a href="#" className={styles.link}>Brachiosaurus</a>
+            </h1>
+            <h1>
+              <a href="#" className={styles.link}>Edmontosaurus</a>
+            </h1>
+            <h1>
+              <a href="#" className={styles.link}>Contact</a>
+            </h1>
+          </div>
         </div>
       </div>
     )

@@ -12,67 +12,77 @@ import Product from './screens/product';
 import Contact from './screens/contact';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
 
-  scrollToTop = () => {
-    const { scrollbars } = this.refs;
-    scrollbars.view.scroll({
-      top: 0,
+    this.scrollbars = React.createRef();
+    this.mobileNavPanel = React.createRef();
+    this.main = React.createRef();
+    this.allosaurus = React.createRef();
+    this.brachiosaurus = React.createRef();
+    this.edmontosaurus = React.createRef();
+    this.contact = React.createRef();
+  }
+
+  scrollTo = (ref) => {
+    this.scrollbars.current.view.scroll({
+      top: ref.current.offsetTop,
       behavior: 'smooth',
     });
   }
 
   openMenu = () => {
-    const { mobileNavPanel } = this.refs;
-    mobileNavPanel.refs.navPanel.style.width = '250px';
-    mobileNavPanel.refs.overlay.style.width = '100%';
-    mobileNavPanel.refs.overlay.style.opacity = '0.8';
+    this.mobileNavPanel.current.refs.navPanel.style.width = '250px';
+    this.mobileNavPanel.current.refs.overlay.style.width = '100%';
+    this.mobileNavPanel.current.refs.overlay.style.opacity = '0.8';
   }
 
   closeMenu = () => {
-    const { mobileNavPanel } = this.refs;
-    mobileNavPanel.refs.navPanel.style.width = '0';
-    mobileNavPanel.refs.overlay.style.opacity = '0';
+    this.mobileNavPanel.current.refs.navPanel.style.width = '0';
+    this.mobileNavPanel.current.refs.overlay.style.opacity = '0';
     setTimeout(() => {
-      mobileNavPanel.refs.overlay.style.width = '0';
+      this.mobileNavPanel.current.refs.overlay.style.width = '0';
     }, 505);
   }
 
   render() {
     return (
       <Scrollbars
-        ref='scrollbars'
+        ref={this.scrollbars}
         style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}
       >
 
+        <div ref={this.main}></div>
         <Main/>
 
         <MobileNavPanel
-          ref='mobileNavPanel'
+          ref={this.mobileNavPanel}
           closeMenu={this.closeMenu}
         />
 
+        <div ref={this.allosaurus}></div>
         <SticktyHeader
-          scrollToTop={this.scrollToTop}
+          scrollToTop={() => this.scrollTo(this.main)}
           openMenu={this.openMenu}
         />
         <About/>
         <SticktyFooter/>
 
-        <div className="pageDividerTop"/>
+        <div ref={this.brachiosaurus} className="pageDividerTop"/>
         <Product
           title='Brachiosaurus'
           text='Most Iconic and initially thought to be one of the Largest Dinosaurs.'
         />
         <div className="pageDividerBottom"/>
 
-        <div className="pageDividerTop"/>
+        <div ref={this.edmontosaurus} ref='edmontosaurus' className="pageDividerTop"/>
         <Product
           title='Edmontosaurus'
           text='Herbivore that could move on both Two Legs and Four. Flex.'
         />
         <div className="pageDividerBottom"/>
 
-        <div className="pageDividerTop"/>
+        <div ref={this.contact} className="pageDividerTop"/>
         <Contact/>
         <div className="pageDividerBottom"/>
 
