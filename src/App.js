@@ -20,6 +20,16 @@ export default class App extends Component {
     });
   }
 
+  openMenu = () => {
+    const { mySidenav } = this.refs;
+    mySidenav.style.width = "100vw";
+  }
+
+  closeMenu = () => {
+    const { mySidenav } = this.refs;
+    mySidenav.style.width = "0";
+  }
+
   render() {
     return (
       <Scrollbars
@@ -29,7 +39,18 @@ export default class App extends Component {
 
         <Main/>
 
-        <SticktyHeader scrollToTop={this.scrollToTop}/>
+        <div ref='mySidenav' className={styles.sidenav}>
+          <a href="javascript:void(0)" className={styles.closebtn} onClick={this.closeMenu}>&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <SticktyHeader
+          scrollToTop={this.scrollToTop}
+          openMenu={this.openMenu}
+        />
         <About/>
         <SticktyFooter/>
 
