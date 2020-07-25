@@ -23,12 +23,18 @@ export default class App extends Component {
 
   openMenu = () => {
     const { mobileNavPanel } = this.refs;
-    mobileNavPanel.refs.mySidenav.style.width = "250px";
+    mobileNavPanel.refs.navPanel.style.width = '250px';
+    mobileNavPanel.refs.overlay.style.width = '100%';
+    mobileNavPanel.refs.overlay.style.opacity = '0.8';
   }
 
   closeMenu = () => {
     const { mobileNavPanel } = this.refs;
-    mobileNavPanel.refs.mySidenav.style.width = "0";
+    mobileNavPanel.refs.navPanel.style.width = '0';
+    mobileNavPanel.refs.overlay.style.opacity = '0';
+    setTimeout(() => {
+      mobileNavPanel.refs.overlay.style.width = '0';
+    }, 505);
   }
 
   render() {

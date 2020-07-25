@@ -1,8 +1,23 @@
-.sidenav {
+.overlay {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
   top: 0;
   right: 0;
   background-color: #111;
