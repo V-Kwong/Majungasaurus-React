@@ -23,7 +23,7 @@ export default class App extends Component {
 
   openMenu = () => {
     const { mobileNavPanel } = this.refs;
-    mobileNavPanel.refs.mySidenav.style.width = "100vw";
+    mobileNavPanel.refs.mySidenav.style.width = "250px";
   }
 
   closeMenu = () => {
