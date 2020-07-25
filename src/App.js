@@ -5,6 +5,7 @@ import styles from './App.module.css';
 
 import Main from './screens/main';
 import SticktyHeader from './components/stickyHeader';
+import MobileNavPanel from './components/mobileNavPanel';
 import About from './screens/about';
 import SticktyFooter from './components/stickyFooter';
 import Product from './screens/product';
@@ -21,13 +22,13 @@ export default class App extends Component {
   }
 
   openMenu = () => {
-    const { mySidenav } = this.refs;
-    mySidenav.style.width = "100vw";
+    const { mobileNavPanel } = this.refs;
+    mobileNavPanel.refs.mySidenav.style.width = "100vw";
   }
 
   closeMenu = () => {
-    const { mySidenav } = this.refs;
-    mySidenav.style.width = "0";
+    const { mobileNavPanel } = this.refs;
+    mobileNavPanel.refs.mySidenav.style.width = "0";
   }
 
   render() {
@@ -39,13 +40,10 @@ export default class App extends Component {
 
         <Main/>
 
-        <div ref='mySidenav' className={styles.sidenav}>
-          <a href="javascript:void(0)" className={styles.closebtn} onClick={this.closeMenu}>&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
-        </div>
+        <MobileNavPanel
+          ref='mobileNavPanel'
+          closeMenu={this.closeMenu}
+        />
 
         <SticktyHeader
           scrollToTop={this.scrollToTop}
