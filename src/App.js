@@ -58,6 +58,12 @@ export default class App extends Component {
         <MobileNavPanel
           ref={this.mobileNavPanel}
           closeMenu={this.closeMenu}
+          scrollTo={this.scrollTo}
+
+          allosaurusRef={this.allosaurus}
+          brachiosaurusRef={this.brachiosaurus}
+          edmontosaurusRef={this.edmontosaurus}
+          contactRef={this.contact}
         />
 
         <div ref={this.allosaurus}></div>
@@ -75,7 +81,7 @@ export default class App extends Component {
         />
         <div className="pageDividerBottom"/>
 
-        <div ref={this.edmontosaurus} ref='edmontosaurus' className="pageDividerTop"/>
+        <div ref={this.edmontosaurus} className="pageDividerTop"/>
         <Product
           title='Edmontosaurus'
           text='Herbivore that could move on both Two Legs and Four. Flex.'
