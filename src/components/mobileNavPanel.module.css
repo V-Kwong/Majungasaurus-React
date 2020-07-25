@@ -23,7 +23,42 @@
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  /* padding-top: 60px; */
+}
+
+.closeIconContainer {
+  height: 20vh;
+  width: 100%;
+  padding-right: 2.5vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  /* background-color: blueviolet; */
+}
+
+.closeIconCircle {
+  height: 3rem;
+  width: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  /* background-color: #313131; */
+
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.closeIconCircle:hover {
+  background-color: #313131;
+}
+
+.closeIconCircle:hover .closeIcon {
+  /* fill: #ffe001; */
 }
 
 .sidenav a {
@@ -39,10 +74,8 @@
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
+@media only screen and (max-width: 600px) {
+  .closeIconContainer {
+    height: 10vh;
+  }
+} 

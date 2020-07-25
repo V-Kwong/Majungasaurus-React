@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CloseIcon from '@material-ui/icons/Close';
 
 import styles from './mobileNavPanel.module.css';
 
@@ -10,10 +11,18 @@ export default class MobileNavPanel extends Component {
       <div>
         <div ref='overlay' className={styles.overlay} onClick={closeMenu}/>
         <div ref='navPanel' className={styles.sidenav}>
-          <a href="javascript:void(0)" className={styles.closebtn} onClick={closeMenu}>&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
+          <div className={styles.closeIconContainer}>
+            <span className={styles.closeIconCircle} onClick={closeMenu}>
+              <CloseIcon
+                className={styles.closeIcon}
+                fontSize='large'
+                color='inherit'
+              />
+            </span>
+          </div>
+          <a href="#">Allosaurus</a>
+          <a href="#">Brachiosaurus</a>
+          <a href="#">Edmontosaurus</a>
           <a href="#">Contact</a>
         </div>
       </div>
