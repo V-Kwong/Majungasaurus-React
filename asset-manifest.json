@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Majungasaurus-React/static/css/main.09582930.chunk.css",
-    "main.js": "/Majungasaurus-React/static/js/main.861c3a08.chunk.js",
-    "main.js.map": "/Majungasaurus-React/static/js/main.861c3a08.chunk.js.map",
+    "main.css": "/Majungasaurus-React/static/css/main.b92c61e5.chunk.css",
+    "main.js": "/Majungasaurus-React/static/js/main.d9fbb143.chunk.js",
+    "main.js.map": "/Majungasaurus-React/static/js/main.d9fbb143.chunk.js.map",
     "runtime-main.js": "/Majungasaurus-React/static/js/runtime-main.39029b49.js",
     "runtime-main.js.map": "/Majungasaurus-React/static/js/runtime-main.39029b49.js.map",
     "static/js/2.bb6296d0.chunk.js": "/Majungasaurus-React/static/js/2.bb6296d0.chunk.js",
     "static/js/2.bb6296d0.chunk.js.map": "/Majungasaurus-React/static/js/2.bb6296d0.chunk.js.map",
     "index.html": "/Majungasaurus-React/index.html",
-    "precache-manifest.10ce3615b341b67881a80ee097a6cee1.js": "/Majungasaurus-React/precache-manifest.10ce3615b341b67881a80ee097a6cee1.js",
+    "precache-manifest.e3e9e1503fed3984a82fd090c4c40b3d.js": "/Majungasaurus-React/precache-manifest.e3e9e1503fed3984a82fd090c4c40b3d.js",
     "service-worker.js": "/Majungasaurus-React/service-worker.js",
-    "static/css/main.09582930.chunk.css.map": "/Majungasaurus-React/static/css/main.09582930.chunk.css.map",
+    "static/css/main.b92c61e5.chunk.css.map": "/Majungasaurus-React/static/css/main.b92c61e5.chunk.css.map",
     "static/js/2.bb6296d0.chunk.js.LICENSE.txt": "/Majungasaurus-React/static/js/2.bb6296d0.chunk.js.LICENSE.txt",
     "static/media/typography.css": "/Majungasaurus-React/static/media/Oxygen-Regular.f9ff876f.ttf",
     "static/media/black-dinosaur-logo-clip-art-png-clip-art.png": "/Majungasaurus-React/static/media/black-dinosaur-logo-clip-art-png-clip-art.ff565b0f.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.39029b49.js",
     "static/js/2.bb6296d0.chunk.js",
-    "static/css/main.09582930.chunk.css",
-    "static/js/main.861c3a08.chunk.js"
+    "static/css/main.b92c61e5.chunk.css",
+    "static/js/main.d9fbb143.chunk.js"
   ]
 }
