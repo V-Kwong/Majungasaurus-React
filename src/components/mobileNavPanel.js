@@ -21,30 +21,42 @@ export default class MobileNavPanel extends Component {
             </span>
           </div>
           <div className={styles.linkContainer}>
-            <h1 onClick={() => {
-              closeMenu()
-              scrollTo(allosaurusRef)
-            }}>
-              <a href="#" className={styles.link}>Allosaurus</a>
-            </h1>
-            <h1 onClick={() => {
-              closeMenu()
-              scrollTo(brachiosaurusRef)
-            }}>
-              <a href="#" className={styles.link}>Brachiosaurus</a>
-            </h1>
-            <h1 onClick={() => {
-              closeMenu()
-              scrollTo(edmontosaurusRef)
-            }}>
-              <a href="#" className={styles.link}>Edmontosaurus</a>
-            </h1>
-            <h1 onClick={() => {
-              closeMenu()
-              scrollTo(contactRef)
-            }}>
-              <a href="#" className={styles.link}>Contact</a>
-            </h1>
+            <a 
+              className={styles.link}
+              onClick={() => {
+                closeMenu()
+                scrollTo(allosaurusRef)
+              }}
+            >
+              Allosaurus
+            </a>
+            <a
+              className={styles.link}
+              onClick={() => {
+                closeMenu()
+                scrollTo(brachiosaurusRef)
+              }}
+            >
+              Brachiosaurus
+            </a>
+            <a
+              className={styles.link}
+              onClick={() => {
+                closeMenu()
+                scrollTo(edmontosaurusRef)
+              }}
+            >
+              Edmontosaurus
+            </a>
+            <a
+              className={styles.link}
+              onClick={() => {
+                closeMenu()
+                scrollTo(contactRef)
+              }}
+            >
+              Contact
+            </a>
           </div>
         </div>
       </div>

@@ -61,33 +61,22 @@
   /* fill: #ffe001; */
 }
 
+.linkContainer {
+  padding-left: 32px;
+}
+
 .link {
+  padding: 8px 0;
+  font-size: 24px;
   text-decoration: none;
-  background: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
+  color: #818181;
   display: block;
-  cursor: pointer;
-  transition: all 0.5s ease;
+  transition: 0.5s;
 }
 
 .link:hover {
   color: #ffe001;
 }
-
-/* .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-} */
 
 @media only screen and (max-width: 600px) {
   .closeIconContainer {
