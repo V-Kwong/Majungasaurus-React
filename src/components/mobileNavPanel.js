@@ -5,7 +5,7 @@ import styles from './mobileNavPanel.module.css';
 
 export default class MobileNavPanel extends Component {
   render() {
-    const { closeMenu, scrollTo, allosaurusRef, brachiosaurusRef, edmontosaurusRef, contactRef } = this.props
+    const { closeMenu, scrollTo, mainRef, allosaurusRef, brachiosaurusRef, edmontosaurusRef, contactRef } = this.props
 
     return (
       <div>
@@ -21,6 +21,15 @@ export default class MobileNavPanel extends Component {
             </span>
           </div>
           <div className={styles.linkContainer}>
+            <a 
+              className={styles.link}
+              onClick={() => {
+                closeMenu()
+                scrollTo(mainRef)
+              }}
+            >
+              Home
+            </a>
             <a 
               className={styles.link}
               onClick={() => {

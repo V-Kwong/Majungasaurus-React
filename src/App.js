@@ -60,6 +60,7 @@ export default class App extends Component {
           closeMenu={this.closeMenu}
           scrollTo={this.scrollTo}
 
+          mainRef={this.main}
           allosaurusRef={this.allosaurus}
           brachiosaurusRef={this.brachiosaurus}
           edmontosaurusRef={this.edmontosaurus}
