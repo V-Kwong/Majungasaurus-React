@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './about.module.css';
-import { HoverButton } from '../components/hoverButton';
+import { RadioButton } from '../components/radioButton';
 
 
 export default class About extends Component {
@@ -30,19 +30,19 @@ export default class About extends Component {
         <div className="container">
           <h1 className="title">Allosaurus</h1>
           <div className={styles.aboutBtnContainer}>
-            <HoverButton
+            <RadioButton
               active={this.state.activeButton === 'Overview'}
               onClick={this.overviewClick}>
                 Overview
-            </HoverButton> 
+            </RadioButton> 
             <div className={styles.aboutBtnDivider}>
               |
             </div>
-            <HoverButton 
+            <RadioButton 
               active={this.state.activeButton === 'Cool Facts'}
               onClick={this.coolFactsClick}>
                 Cool Facts
-            </HoverButton>
+            </RadioButton>
           </div>
           <div className={this.state.activeButton === 'Overview' ? styles.showText : styles.hideText}>
             <p className="textLine">
