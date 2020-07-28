@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CloseIcon from '@material-ui/icons/Close';
 
 import styles from './mobileNavPanel.module.css';
+import { MaterialHoverIcon } from './materialHoverIcon';
 import { NavPanelLink } from './navPanelLink';
 
 export default class MobileNavPanel extends Component {
@@ -13,13 +14,13 @@ export default class MobileNavPanel extends Component {
         <div ref='overlay' className={styles.overlay} onClick={closeMenu}/>
         <div ref='navPanel' className={styles.sidenav}>
           <div className={styles.closeIconContainer}>
-            <span className={styles.closeIconCircle} onClick={closeMenu}>
+            <MaterialHoverIcon onClick={closeMenu}>
               <CloseIcon
                 className={styles.closeIcon}
                 fontSize='large'
                 color='inherit'
               />
-            </span>
+            </MaterialHoverIcon>
           </div>
           <div className={styles.linkContainer}>
             <NavPanelLink

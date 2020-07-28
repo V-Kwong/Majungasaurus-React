@@ -3,6 +3,7 @@ import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 import styles from './sticktyHeader.module.css';
 import Logo from '../images/black-dinosaur-logo-clip-art-png-clip-art.png';
+import { MaterialHoverIcon } from './materialHoverIcon';
 
 export default class SticktyHeader extends Component {
   render() {
@@ -11,13 +12,13 @@ export default class SticktyHeader extends Component {
     return (
       <div className={["pageDividerTop", styles.container].join(' ')}>
         <img src={Logo} className={styles.logo} alt="" onClick={scrollToTop}/>
-        <span className={styles.menuIconCircle} onClick={openMenu}>
+        <MaterialHoverIcon onClick={openMenu}>
           <MenuRoundedIcon
             className={styles.menuIcon}
             fontSize='large'
             color='inherit'
           />
-        </span>
+        </MaterialHoverIcon>
       </div>
     )
   }

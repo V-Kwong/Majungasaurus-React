@@ -38,29 +38,6 @@
   /* background-color: blueviolet; */
 }
 
-.closeIconCircle {
-  height: 3rem;
-  width: 3rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-  /* background-color: #313131; */
-
-  cursor: pointer;
-  transition: all .25s ease;
-}
-
-.closeIconCircle:hover {
-  background-color: #313131;
-}
-
-.closeIconCircle:hover .closeIcon {
-  /* fill: #ffe001; */
-}
-
 .linkContainer {
   padding-left: 32px;
 }
