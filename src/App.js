@@ -22,7 +22,26 @@ export default class App extends Component {
     this.brachiosaurus = React.createRef();
     this.edmontosaurus = React.createRef();
     this.contact = React.createRef();
+
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
+
+  
+componentDidMount() {
+  this.updateWindowDimensions();
+  window.addEventListener('resize', this.updateWindowDimensions);
+}
+
+componentWillUnmount() {
+  window.removeEventListener('resize', this.updateWindowDimensions);
+}
+
+updateWindowDimensions() {
+  this.setState({ width: window.innerWidth, height: window.innerHeight });
+  console.log('width: ' + window.innerWidth)
+  console.log('height: ' + window.innerHeight)
+}
 
   scrollTo = (ref) => {
     this.scrollbars.current.view.scroll({
