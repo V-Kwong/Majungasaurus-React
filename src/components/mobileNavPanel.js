@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CloseIcon from '@material-ui/icons/Close';
 
 import styles from './mobileNavPanel.module.css';
+import { NavPanelLink } from './navPanelLink';
 
 export default class MobileNavPanel extends Component {
   render() {
@@ -21,51 +22,46 @@ export default class MobileNavPanel extends Component {
             </span>
           </div>
           <div className={styles.linkContainer}>
-            <a 
-              className={styles.link}
+            <NavPanelLink
               onClick={() => {
                 closeMenu()
                 scrollTo(mainRef)
               }}
             >
               Home
-            </a>
-            <a 
-              className={styles.link}
+            </NavPanelLink>
+            <NavPanelLink
               onClick={() => {
                 closeMenu()
                 scrollTo(allosaurusRef)
               }}
             >
               Allosaurus
-            </a>
-            <a
-              className={styles.link}
+            </NavPanelLink>
+            <NavPanelLink
               onClick={() => {
                 closeMenu()
                 scrollTo(brachiosaurusRef)
               }}
             >
               Brachiosaurus
-            </a>
-            <a
-              className={styles.link}
+            </NavPanelLink>
+            <NavPanelLink
               onClick={() => {
                 closeMenu()
                 scrollTo(edmontosaurusRef)
               }}
             >
               Edmontosaurus
-            </a>
-            <a
-              className={styles.link}
+            </NavPanelLink>
+            <NavPanelLink
               onClick={() => {
                 closeMenu()
                 scrollTo(contactRef)
               }}
             >
               Contact
-            </a>
+            </NavPanelLink>
           </div>
         </div>
       </div>
