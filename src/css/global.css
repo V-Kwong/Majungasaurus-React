@@ -116,6 +116,12 @@ ul {
   padding: 0;
 }
 
+@media only screen and (max-height: 568px) {
+  p {
+    line-height: 14px;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .container {
     /* margin-top: 10vh; */
@@ -144,4 +150,4 @@ ul {
     height: 10vh;
     min-height: 57px;
   }
-} 
+}

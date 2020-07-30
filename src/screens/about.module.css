@@ -30,3 +30,9 @@
   font-weight: bold;
   line-height: calc(24px + (48 - 24) * ((100vh - 600px)/(1000 - 600))); 
 }
+
+@media only screen and (max-height: 568px) {
+  .lastLine {
+    line-height: 22px;
+  }
+}
