@@ -16,6 +16,7 @@
 
 .logo {
   width: 14vh;
+  min-width: 57px;
   /* margin: 3vh 2.5vw; */
   cursor: pointer;
   transition: opacity 0.5s ease;

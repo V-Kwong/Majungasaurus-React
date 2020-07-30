@@ -28,6 +28,7 @@
 
 .closeIconContainer {
   height: 20vh;
+  min-height: 114px;
   width: 100%;
   padding-right: 2.5vw;
 
@@ -45,5 +46,6 @@
 @media only screen and (max-width: 1023px) {
   .closeIconContainer {
     height: 10vh;
+    min-height: 57px;
   }
 } 

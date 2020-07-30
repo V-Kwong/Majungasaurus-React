@@ -53,6 +53,7 @@ body {
   /* margin-bottom: 10vh; */
   height: 70vh;
   width: 80vw;
+  min-height: 398px;
   /* background-color: navy; */
   /* padding-top: 5px;
   padding-bottom: 5px; */
@@ -71,11 +72,13 @@ body {
 .pageDividerTop {
   height: 20vh;
   width: 100vw;
+  min-height: 114px;
 }
 
 .pageDividerBottom {
   height: 10vh;
   width: 100vw;
+  min-height: 57px;
 }
 
 h1 {
@@ -121,6 +124,7 @@ ul {
     /* margin-bottom: 10vh; */
     height: 80vh;
     width: 84vw;
+    min-height: 454px;
     /* min-height: 512px; */
     /* background-color: navy; */
     /* padding-top: 5px;
@@ -138,5 +142,6 @@ ul {
   }
   .pageDividerTop {
     height: 10vh;
+    min-height: 57px;
   }
 } 

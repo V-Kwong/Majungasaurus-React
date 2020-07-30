@@ -1,5 +1,6 @@
 .container {
   /* min-height: 64px; */
+  min-height: 0;
   padding-left: 2.5vw;
 
   position: -webkit-sticky;
