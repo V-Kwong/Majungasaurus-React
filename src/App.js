@@ -92,6 +92,17 @@ updateWindowDimensions() {
           openMenu={this.openMenu}
         />
         <About/>
+
+        <div className={styles.sideMenuContainer}>
+          <ul>
+            <li>Home</li>
+            <li>Allosaurus</li>
+            <li>Brachiosaurus</li>
+            <li>Edmontosaurus</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+
         <SticktyFooter/>
 
         <div ref={this.brachiosaurus} className="pageDividerTop"/>
