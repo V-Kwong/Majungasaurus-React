@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a889ed3482f5ccbb141fd05dc6b8aa1a",
+    "revision": "15e7dd5492d4438fbf35adb57697cb61",
     "url": "/Majungasaurus-React/index.html"
   },
   {
-    "revision": "0a88a3a611a78ba8342f",
+    "revision": "b181a14dfaaf8f889dc1",
     "url": "/Majungasaurus-React/static/css/main.ae9095b2.chunk.css"
   },
   {
-    "revision": "5efc095011d23cf8dabb",
-    "url": "/Majungasaurus-React/static/js/2.c73b9a65.chunk.js"
+    "revision": "d3e3ae930238af20ae7e",
+    "url": "/Majungasaurus-React/static/js/2.1f7a2d8f.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Majungasaurus-React/static/js/2.c73b9a65.chunk.js.LICENSE.txt"
+    "url": "/Majungasaurus-React/static/js/2.1f7a2d8f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0a88a3a611a78ba8342f",
-    "url": "/Majungasaurus-React/static/js/main.3d97b711.chunk.js"
+    "revision": "b181a14dfaaf8f889dc1",
+    "url": "/Majungasaurus-React/static/js/main.e1e67d3a.chunk.js"
   },
   {
     "revision": "bb53e44c41e8e351d96f",
