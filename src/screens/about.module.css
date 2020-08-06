@@ -11,18 +11,18 @@
   padding: 0 12px;
 }
 
-.showText {
-  /* position: absolute;
-  max-width: 80vw; */
-  opacity: 1;
+.textContainer {
+  position: absolute;
+  max-width: 80vw;
   transition: all 400ms linear;
 }
 
+.showText {
+  opacity: 1;
+}
+
 .hideText {
-  /* position: absolute;
-  max-width: 80vw; */
   opacity: 0;
-  transition: all 400ms linear;
 }
 
 .lastLine {
@@ -42,5 +42,8 @@
     float: left;
     width: 75vw;
     margin-right: 5vw;
+  }
+  .textContainer {
+    max-width: 75vw;
   }
 }
