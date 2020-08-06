@@ -1,5 +1,5 @@
 .sideMenuContainer {
-  height: 70vh;
+  height: 60vh;
   width: 15vw;
   /* position: fixed; */
   right: 0;
@@ -13,6 +13,38 @@
   align-items: center;
 
   /* background-color: chartreuse; */
+  text-align: center;
+}
+
+.sideMenuContainer li {
+  font-size: 16px;
+  display: block;
+  padding: 9px 18px;
+  margin: 10px;
+  transform: scale(1.0);
+  transition-duration: 0.3s;
+}
+
+.sideMenuContainer li:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+}
+
+.sideMenuContainer li.active {
+  font-weight: bold;
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.sideMenuContainer li.active:hover {
+  background: #ffe001;
+  color: #000;
+  text-decoration: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 @media only screen and (min-width: 1024px) {

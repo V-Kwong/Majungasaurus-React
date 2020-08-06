@@ -96,7 +96,7 @@ updateWindowDimensions() {
         <div className={styles.sideMenuContainer}>
           <ul>
             <li>Home</li>
-            <li>Allosaurus</li>
+            <li className={styles.active}>Allosaurus</li>
             <li>Brachiosaurus</li>
             <li>Edmontosaurus</li>
             <li>Contact</li>
