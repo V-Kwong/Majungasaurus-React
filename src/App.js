@@ -116,11 +116,36 @@ export default class App extends Component {
 
         <div className={styles.sideMenuContainer}>
           <ul>
-            <li className={ this.state.activePage === 'home' ? styles.active : '' }>Home</li>
-            <li className={ this.state.activePage === 'allosaurus' ? styles.active : '' }>Allosaurus</li>
-            <li className={ this.state.activePage === 'brachiosaurus' ? styles.active : '' }>Brachiosaurus</li>
-            <li className={ this.state.activePage === 'edmontosaurus' ? styles.active : '' }>Edmontosaurus</li>
-            <li className={ this.state.activePage === 'contact' ? styles.active : '' }>Contact</li>
+            <li 
+              className={ this.state.activePage === 'home' ? styles.active : '' }
+              onClick={() => this.scrollTo(this.home)}
+            >
+              Home
+            </li>
+            <li 
+              className={ this.state.activePage === 'allosaurus' ? styles.active : '' }
+              onClick={() => this.scrollTo(this.allosaurus)}
+            >
+              Allosaurus
+            </li>
+            <li 
+              className={ this.state.activePage === 'brachiosaurus' ? styles.active : '' }
+              onClick={() => this.scrollTo(this.brachiosaurus)}
+            >
+              Brachiosaurus
+            </li>
+            <li
+              className={ this.state.activePage === 'edmontosaurus' ? styles.active : '' }
+              onClick={() => this.scrollTo(this.edmontosaurus)}
+            >
+              Edmontosaurus
+            </li>
+            <li
+              className={ this.state.activePage === 'contact' ? styles.active : '' }
+              onClick={() => this.scrollTo(this.contact)}
+            >
+              Contact
+            </li>
           </ul>
         </div>
 
