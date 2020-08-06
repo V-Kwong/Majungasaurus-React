@@ -17,31 +17,49 @@ export default class App extends Component {
 
     this.scrollbars = React.createRef();
     this.mobileNavPanel = React.createRef();
-    this.main = React.createRef();
+    this.home = React.createRef();
     this.allosaurus = React.createRef();
     this.brachiosaurus = React.createRef();
     this.edmontosaurus = React.createRef();
     this.contact = React.createRef();
 
-    this.state = { width: 0, height: 0 };
-    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.state = {
+      activePage: 'home'
+    }
+    // this.state = { width: 0, height: 0 };
+    // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
   
-componentDidMount() {
-  this.updateWindowDimensions();
-  window.addEventListener('resize', this.updateWindowDimensions);
-}
+  // componentDidMount() {
+  //   this.updateWindowDimensions();
+  //   window.addEventListener('resize', this.updateWindowDimensions);
+  // }
 
-componentWillUnmount() {
-  window.removeEventListener('resize', this.updateWindowDimensions);
-}
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.updateWindowDimensions);
+  // }
 
-updateWindowDimensions() {
-  this.setState({ width: window.innerWidth, height: window.innerHeight });
-  console.log('width: ' + window.innerWidth)
-  console.log('height: ' + window.innerHeight)
-}
+  // updateWindowDimensions() {
+  //   this.setState({ width: window.innerWidth, height: window.innerHeight });
+  //   console.log('width: ' + window.innerWidth)
+  //   console.log('height: ' + window.innerHeight)
+  // }
+
+  onScroll = (event) => {
+    let scrollTop = event.target.scrollTop
+    if (scrollTop >= this.contact.current.offsetTop) {
+      this.setState({ activePage: 'contact' })
+    } else if (scrollTop >= this.edmontosaurus.current.offsetTop) {
+      this.setState({ activePage: 'edmontosaurus' })
+    } else if (scrollTop >= this.brachiosaurus.current.offsetTop) {
+      this.setState({ activePage: 'brachiosaurus' })
+    } else if (scrollTop >= this.allosaurus.current.offsetTop) {
+      this.setState({ activePage: 'allosaurus' })
+    } else {
+      this.setState({ activePage: 'home' })
+    }
+  }
 
   scrollTo = (ref) => {
     this.scrollbars.current.view.scroll({
@@ -69,9 +87,10 @@ updateWindowDimensions() {
       <Scrollbars
         ref={this.scrollbars}
         style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}
+        onScroll={this.onScroll}
       >
 
-        <div ref={this.main}></div>
+        <div ref={this.home}></div>
         <Main/>
 
         <MobileNavPanel
@@ -79,7 +98,7 @@ updateWindowDimensions() {
           closeMenu={this.closeMenu}
           scrollTo={this.scrollTo}
 
-          mainRef={this.main}
+          mainRef={this.home}
           allosaurusRef={this.allosaurus}
           brachiosaurusRef={this.brachiosaurus}
           edmontosaurusRef={this.edmontosaurus}
@@ -88,18 +107,18 @@ updateWindowDimensions() {
 
         <div ref={this.allosaurus}></div>
         <StickyHeader
-          scrollToTop={() => this.scrollTo(this.main)}
+          scrollToTop={() => this.scrollTo(this.home)}
           openMenu={this.openMenu}
         />
         <About/>
 
         <div className={styles.sideMenuContainer}>
           <ul>
-            <li>Home</li>
-            <li className={styles.active}>Allosaurus</li>
-            <li>Brachiosaurus</li>
-            <li>Edmontosaurus</li>
-            <li>Contact</li>
+            <li className={ this.state.activePage === 'home' ? styles.active : '' }>Home</li>
+            <li className={ this.state.activePage === 'allosaurus' ? styles.active : '' }>Allosaurus</li>
+            <li className={ this.state.activePage === 'brachiosaurus' ? styles.active : '' }>Brachiosaurus</li>
+            <li className={ this.state.activePage === 'edmontosaurus' ? styles.active : '' }>Edmontosaurus</li>
+            <li className={ this.state.activePage === 'contact' ? styles.active : '' }>Contact</li>
           </ul>
         </div>
 
