@@ -55,3 +55,9 @@
     /* margin: 1.5vh 2.5vw; */
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .menuContainer {
+    display: none;
+  }
+}

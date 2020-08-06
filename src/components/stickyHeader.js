@@ -12,13 +12,15 @@ export default class StickyHeader extends Component {
     return (
       <div className={["pageDividerTop", styles.container].join(' ')}>
         <img src={Logo} className={styles.logo} alt="" onClick={scrollToTop}/>
-        <MaterialHoverIcon onClick={openMenu}>
-          <MenuRoundedIcon
-            className={styles.menuIcon}
-            fontSize='large'
-            color='inherit'
-          />
-        </MaterialHoverIcon>
+        <div className={styles.menuContainer}>
+          <MaterialHoverIcon onClick={openMenu}>
+            <MenuRoundedIcon
+              className={styles.menuIcon}
+              fontSize='large'
+              color='inherit'
+            />
+          </MaterialHoverIcon>
+        </div>
       </div>
     )
   }
