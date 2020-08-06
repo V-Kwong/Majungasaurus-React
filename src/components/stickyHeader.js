@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
-import styles from './sticktyHeader.module.css';
+import styles from './stickyHeader.module.css';
 import Logo from '../images/black-dinosaur-logo-clip-art-png-clip-art.png';
 import { MaterialHoverIcon } from './materialHoverIcon';
 
-export default class SticktyHeader extends Component {
+export default class StickyHeader extends Component {
   render() {
     const { scrollToTop, openMenu } = this.props
 

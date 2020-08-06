@@ -12,15 +12,15 @@
 }
 
 .showText {
-  position: absolute;
-  max-width: 80vw;
+  /* position: absolute;
+  max-width: 80vw; */
   opacity: 1;
   transition: all 400ms linear;
 }
 
 .hideText {
-  position: absolute;
-  max-width: 80vw;
+  /* position: absolute;
+  max-width: 80vw; */
   opacity: 0;
   transition: all 400ms linear;
 }
@@ -40,7 +40,7 @@
 @media only screen and (min-width: 1024px) {
   .container {
     float: left;
-    width: 80vw;
-    margin-right: 0;
+    width: 75vw;
+    margin-right: 5vw;
   }
 }

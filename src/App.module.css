@@ -8,9 +8,15 @@
   position: sticky;
   float: right;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
+}
+
+@media only screen and (min-width: 1024px) {
+  .sideMenuContainer {
+    display: flex;
+  }
 }

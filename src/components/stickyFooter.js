@@ -4,9 +4,9 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-import styles from './sticktyFooter.module.css';
+import styles from './stickyFooter.module.css';
 
-export default class SticktyFooter extends Component {
+export default class StickyFooter extends Component {
   render() {
     return (
       <div className={["pageDividerBottom", styles.container].join(' ')}>

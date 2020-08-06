@@ -4,10 +4,10 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import styles from './App.module.css';
 
 import Main from './screens/main';
-import SticktyHeader from './components/stickyHeader';
+import StickyHeader from './components/stickyHeader';
 import MobileNavPanel from './components/mobileNavPanel';
 import About from './screens/about';
-import SticktyFooter from './components/stickyFooter';
+import StickyFooter from './components/stickyFooter';
 import Product from './screens/product';
 import Contact from './screens/contact';
 
@@ -87,7 +87,7 @@ updateWindowDimensions() {
         />
 
         <div ref={this.allosaurus}></div>
-        <SticktyHeader
+        <StickyHeader
           scrollToTop={() => this.scrollTo(this.main)}
           openMenu={this.openMenu}
         />
@@ -103,7 +103,7 @@ updateWindowDimensions() {
           </ul>
         </div>
 
-        <SticktyFooter/>
+        <StickyFooter/>
 
         <div ref={this.brachiosaurus} className="pageDividerTop"/>
         <Product
