@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Majungasaurus-React/static/css/main.d0d0a9b0.chunk.css",
-    "main.js": "/Majungasaurus-React/static/js/main.b6661305.chunk.js",
-    "main.js.map": "/Majungasaurus-React/static/js/main.b6661305.chunk.js.map",
+    "main.js": "/Majungasaurus-React/static/js/main.576696f5.chunk.js",
+    "main.js.map": "/Majungasaurus-React/static/js/main.576696f5.chunk.js.map",
     "runtime-main.js": "/Majungasaurus-React/static/js/runtime-main.39029b49.js",
     "runtime-main.js.map": "/Majungasaurus-React/static/js/runtime-main.39029b49.js.map",
     "static/js/2.46367ffb.chunk.js": "/Majungasaurus-React/static/js/2.46367ffb.chunk.js",
     "static/js/2.46367ffb.chunk.js.map": "/Majungasaurus-React/static/js/2.46367ffb.chunk.js.map",
     "index.html": "/Majungasaurus-React/index.html",
-    "precache-manifest.27f2208f6bdbb0470e52a8f041d751ff.js": "/Majungasaurus-React/precache-manifest.27f2208f6bdbb0470e52a8f041d751ff.js",
+    "precache-manifest.b280e817a047f363aa1dfb7640490ba0.js": "/Majungasaurus-React/precache-manifest.b280e817a047f363aa1dfb7640490ba0.js",
     "service-worker.js": "/Majungasaurus-React/service-worker.js",
     "static/css/main.d0d0a9b0.chunk.css.map": "/Majungasaurus-React/static/css/main.d0d0a9b0.chunk.css.map",
     "static/js/2.46367ffb.chunk.js.LICENSE.txt": "/Majungasaurus-React/static/js/2.46367ffb.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.39029b49.js",
     "static/js/2.46367ffb.chunk.js",
     "static/css/main.d0d0a9b0.chunk.css",
-    "static/js/main.b6661305.chunk.js"
+    "static/js/main.576696f5.chunk.js"
   ]
 }
