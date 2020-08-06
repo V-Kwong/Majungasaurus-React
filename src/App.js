@@ -98,6 +98,8 @@ export default class App extends Component {
           closeMenu={this.closeMenu}
           scrollTo={this.scrollTo}
 
+          activePage={this.state.activePage}
+
           mainRef={this.home}
           allosaurusRef={this.allosaurus}
           brachiosaurusRef={this.brachiosaurus}

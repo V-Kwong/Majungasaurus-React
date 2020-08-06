@@ -43,6 +43,25 @@
   padding-left: 32px;
 }
 
+.link {
+  cursor: pointer;
+  padding: 8px 0;
+  font-size: 24px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.link:hover {
+  color: #ffe001;
+}
+
+.link.active {
+  color: #ffe001;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1023px) {
   .closeIconContainer {
     height: 10vh;

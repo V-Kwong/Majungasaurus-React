@@ -3,11 +3,10 @@ import CloseIcon from '@material-ui/icons/Close';
 
 import styles from './mobileNavPanel.module.css';
 import { MaterialHoverIcon } from './materialHoverIcon';
-import { NavPanelLink } from './navPanelLink';
 
 export default class MobileNavPanel extends Component {
   render() {
-    const { closeMenu, scrollTo, mainRef, allosaurusRef, brachiosaurusRef, edmontosaurusRef, contactRef } = this.props
+    const { closeMenu, scrollTo, activePage, mainRef, allosaurusRef, brachiosaurusRef, edmontosaurusRef, contactRef } = this.props
 
     return (
       <div>
@@ -23,46 +22,51 @@ export default class MobileNavPanel extends Component {
             </MaterialHoverIcon>
           </div>
           <div className={styles.linkContainer}>
-            <NavPanelLink
+            <a 
+              className={[styles.link, activePage === 'home' ? styles.active : ''].join(' ')}
               onClick={() => {
                 closeMenu()
                 scrollTo(mainRef)
               }}
             >
               Home
-            </NavPanelLink>
-            <NavPanelLink
+            </a>
+            <a
+              className={[styles.link, activePage === 'allosaurus' ? styles.active : ''].join(' ')}
               onClick={() => {
                 closeMenu()
                 scrollTo(allosaurusRef)
               }}
             >
               Allosaurus
-            </NavPanelLink>
-            <NavPanelLink
+            </a>
+            <a 
+              className={[styles.link, activePage === 'brachiosaurus' ? styles.active : ''].join(' ')}
               onClick={() => {
                 closeMenu()
                 scrollTo(brachiosaurusRef)
               }}
             >
               Brachiosaurus
-            </NavPanelLink>
-            <NavPanelLink
+            </a>
+            <a 
+              className={[styles.link, activePage === 'edmontosaurus' ? styles.active : ''].join(' ')}
               onClick={() => {
                 closeMenu()
                 scrollTo(edmontosaurusRef)
               }}
             >
               Edmontosaurus
-            </NavPanelLink>
-            <NavPanelLink
+            </a>
+            <a
+              className={[styles.link, activePage === 'contact' ? styles.active : ''].join(' ')}
               onClick={() => {
                 closeMenu()
                 scrollTo(contactRef)
               }}
             >
               Contact
-            </NavPanelLink>
+            </a>
           </div>
         </div>
       </div>
