@@ -73,14 +73,14 @@ body {
   height: 20vh;
   width: 100vw;
   min-height: 114px;
-  background-color: black;
+  background-color: #121212;
 }
 
 .pageDividerBottom {
   height: 10vh;
   width: 100vw;
   min-height: 57px;
-  background-color: black;
+  background-color: #121212;
 }
 
 h1 {

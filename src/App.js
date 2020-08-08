@@ -86,7 +86,7 @@ export default class App extends Component {
     return (
       <Scrollbars
         ref={this.scrollbars}
-        style={{ width: '100vw', height: '100vh', backgroundColor: 'black' }}
+        style={{ width: '100vw', height: '100vh', backgroundColor: '#121212' }}
         onScroll={this.onScroll}
       >
 
