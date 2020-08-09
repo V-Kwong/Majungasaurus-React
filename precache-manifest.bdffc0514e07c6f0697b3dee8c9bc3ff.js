@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "226fb3b7e9aa9acd8cb5621b9e675a96",
+    "revision": "cf8763835a4e855e87e9f6644b26d253",
     "url": "/Majungasaurus-React/index.html"
   },
   {
-    "revision": "5cb33e36df89dccb7623",
+    "revision": "f773993feabe8fe0b681",
     "url": "/Majungasaurus-React/static/css/main.c2e4026f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Majungasaurus-React/static/js/2.cebb87ce.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5cb33e36df89dccb7623",
-    "url": "/Majungasaurus-React/static/js/main.7b80fabc.chunk.js"
+    "revision": "f773993feabe8fe0b681",
+    "url": "/Majungasaurus-React/static/js/main.ca80b2d8.chunk.js"
   },
   {
     "revision": "bb53e44c41e8e351d96f",
