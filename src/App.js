@@ -28,23 +28,29 @@ export default class App extends Component {
     }
     // this.state = { width: 0, height: 0 };
     // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+    this.appHeight()
   }
 
   
-  // componentDidMount() {
-  //   this.updateWindowDimensions();
-  //   window.addEventListener('resize', this.updateWindowDimensions);
-  // }
+  componentDidMount() {
+    // this.updateWindowDimensions();
+    window.addEventListener('resize', this.appHeight);
+  }
 
-  // componentWillUnmount() {
-  //   window.removeEventListener('resize', this.updateWindowDimensions);
-  // }
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.appHeight);
+  }
 
   // updateWindowDimensions() {
   //   this.setState({ width: window.innerWidth, height: window.innerHeight });
   //   console.log('width: ' + window.innerWidth)
   //   console.log('height: ' + window.innerHeight)
   // }
+
+  appHeight = () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
 
   onScroll = (event) => {
     let scrollTop = event.target.scrollTop
@@ -86,7 +92,8 @@ export default class App extends Component {
     return (
       <Scrollbars
         ref={this.scrollbars}
-        style={{ width: '100vw', height: '100vh', backgroundColor: '#121212' }}
+        className={styles.scrollbars}
+        autoHide
         onScroll={this.onScroll}
       >
 

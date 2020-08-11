@@ -1,3 +1,9 @@
+.scrollbars {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #121212 !important;
+}
+
 .sideMenuContainer {
   height: 60vh;
   width: 15vw;
@@ -46,6 +52,16 @@
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+@media only screen and (max-width: 1023px) {
+  .scrollbars {
+    height: calc(var(--vh, 1vh) * 100) !important;
+  }
+  .sideMenuContainer {
+    height: calc(var(--vh, 1vh) * 60);
+    top: calc(var(--vh, 1vh) * 20);
+  }
 }
 
 @media only screen and (min-width: 1024px) {

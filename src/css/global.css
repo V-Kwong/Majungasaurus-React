@@ -135,6 +135,7 @@ ul {
     margin-right: 8vw;
     /* margin-bottom: 10vh; */
     height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
     width: 84vw;
     min-height: 454px;
     /* min-height: 512px; */
@@ -154,6 +155,11 @@ ul {
   }
   .pageDividerTop {
     height: 10vh;
+    height: calc(var(--vh, 1vh) * 10);
     min-height: 57px;
+  }
+  .pageDividerBottom {
+    height: 10vh;
+    height: calc(var(--vh, 1vh) * 10);
   }
 }

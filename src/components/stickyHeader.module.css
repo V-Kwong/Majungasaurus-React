@@ -52,6 +52,7 @@
 @media only screen and (max-width: 1023px) {
   .logo {
     width: 10vh;
+    width: calc(var(--vh, 1vh) * 10);
     /* margin: 1.5vh 2.5vw; */
   }
 }

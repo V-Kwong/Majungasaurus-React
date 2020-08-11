@@ -51,3 +51,16 @@
   margin-bottom: 1em;
   background: #ffe001 none repeat scroll 0% 0%;
 }
+
+@media only screen and (max-width: 1023px) {
+  .topContainer {
+    height: calc(var(--vh, 1vh) * 65);
+  }
+  .bottomContainer {
+    height: calc(var(--vh, 1vh) * 35);
+    padding-top: calc(var(--vh, 1vh) * 10);
+  }
+  .logo {
+    height: calc(var(--vh, 1vh) * 35);
+  }
+}
