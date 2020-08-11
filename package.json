@@ -13,6 +13,7 @@
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.1.1"
   },
   "scripts": {
