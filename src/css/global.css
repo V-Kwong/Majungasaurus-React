@@ -33,6 +33,10 @@ td {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   font-family: 'Oxygen';
   margin: 0;
