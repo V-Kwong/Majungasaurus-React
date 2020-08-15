@@ -14,6 +14,7 @@ export const DiscoverButton = styled.a`
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -moz-border-radius: 5px;
+  line-height: calc(15px + (24 - 15) * ((100vh - 600px)/(1000 - 600)));
 
   &:hover {
     color: #000;
